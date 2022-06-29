@@ -74,9 +74,10 @@ Server: Docker Engine - Community
 
 ```
 
-Create a test directory to contain your docker work:
+Create a test directory to contain your docker work and switch to that directory:
 ```
-$ mkdir docker; cd docker
+$ mkdir docker
+$ cd docker
 ```
 
 ### Docker Images, Tags, and Docker Hub
