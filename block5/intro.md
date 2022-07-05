@@ -32,7 +32,7 @@ Tapis UI provides a file interface for browsing, uploading and downloading files
 
 With Tapis UI, you can launch a job from an application. Tapis UI simplifies the process by providing a step-by-step wizard with pre-populated defaults from an app definition. The resulting Job definition can be submitted directly to the Jobs service, or the JSON definition can be copied for use with CLI commands.
 
-<img src="./images/files.png" class="img-responsive" alt="Tapis UI apps">
+<img src="../images/files.png" class="img-responsive" alt="Tapis UI apps">
 
 ### Jobs
 
