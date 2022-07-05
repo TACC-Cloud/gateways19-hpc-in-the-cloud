@@ -10,23 +10,23 @@ A demonstration site for this training is available at [https://tapis-training.g
 
 Upon logging in, you will be taken to a Dashboard with a summary of objects on the Tapis Training tenant that are visible to your account. You may use the shortcuts here to view the relevant Tapis service.
 
-<img src="./images/intro.png" class="img-responsive" alt="Tapis UI dashboard"> 
+<img src="../images/intro.png" class="img-responsive" alt="Tapis UI dashboard"> 
 
 The sidebar in Tapis UI provides top level navigation to different Tapis services. Tapis UI is a work in progress. As user interfaces for more services are implemented, this sidebar will grow.
 
-<img src="./images/sidebar.png" class="img-responsive" alt="Tapis UI sidebar"> 
+<img src="../images/sidebar.png" class="img-responsive" alt="Tapis UI sidebar"> 
 
 ### Systems
 
 You may view the definitions of Tapis systems that are available. In addition to providing a visual, web-friendly view of the system definition, you may also view the pre-formatted JSON definition of the system. This pre-formatted JSON can be copied to clipboard, making it easy to re-use the definition with CLI commands.
 
-<img src="./images/systems.png" class="img-responsive" alt="Tapis UI systems"> 
+<img src="../images/systems.png" class="img-responsive" alt="Tapis UI systems"> 
 
 ### Files
 
 Tapis UI provides a file interface for browsing, uploading and downloading files on Tapis systems. 
 
-<img src="./images/files.png" class="img-responsive" alt="Tapis UI files">
+<img src="../images/files.png" class="img-responsive" alt="Tapis UI files">
 
 ### Apps
 
@@ -38,7 +38,7 @@ With Tapis UI, you can launch a job from an application. Tapis UI simplifies the
 
 Tapis UI can display details of Jobs that have been launched on the tenant.
 
-<img src="./images/jobs.png" class="img-responsive" alt="Tapis UI jobs">
+<img src="../images/jobs.png" class="img-responsive" alt="Tapis UI jobs">
 
 ## Deployment Prerequisites 
 

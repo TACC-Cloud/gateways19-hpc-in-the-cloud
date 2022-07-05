@@ -6,19 +6,19 @@ You can deploy your own live copy of Tapis UI. This page will be hosted on GitHu
 
 In your fork repository of Tapis UI, find the *Settings* option on the horizontal navigation for the repository.
 
-<img src="./images/deploy_settings.png" class="img-responsive" alt="Repository Settings">
+<img src="../images/deploy_settings.png" class="img-responsive" alt="Repository Settings">
 
 Next, find the *Pages* option in the navigation sidebar.
 
-<img src="./images/deploy_pages.png" class="img-responsive" alt="Repository Pages">
+<img src="../images/deploy_pages.png" class="img-responsive" alt="Repository Pages">
 
 In the *Source* dropdown, search for the `gh-pages` branch and select it.
 
-<img src="./images/deploy_source.png" class="img-responsive" alt="Repository Page Source">
+<img src="../images/deploy_source.png" class="img-responsive" alt="Repository Page Source">
 
 Then click the *Save* button.
 
-<img src="./images/deploy_save.png" class="img-responsive" alt="Repository Source Save Button">
+<img src="../images/deploy_save.png" class="img-responsive" alt="Repository Source Save Button">
 
 Note the message that says *Your site is ready to be published at `https://GITHUB_USERNAME.github.io/tapis-ui`. That is the URL of your Tapis UI deployment, and you will need this address in the next step.
 
@@ -56,7 +56,7 @@ Once it has completed, you will be able to browse to the provided GitHub pages U
 
 Occasionally, new releases of Tapis UI will add features and fix bugs. You can update your fork by merging these changes, pulling them down to your local development environment and then deploying them. First, on your forked repository page, find the *Fetch Upstream* dropdown and click the *Fetch and Merge* button.
 
-<img src="./images/deploy_merge.png" class="img-responsive" alt="Repository Merge">
+<img src="../images/deploy_merge.png" class="img-responsive" alt="Repository Merge">
 
 In your local development machine, from within your cloned repository's directory, you may use the following commands:
 
