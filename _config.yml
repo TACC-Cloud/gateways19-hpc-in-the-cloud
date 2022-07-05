@@ -20,5 +20,9 @@ nav:
   - Intro to Tapis Jobs:
     - Intro to Tapis Jobs: block4/jobs
     - Job outputs and sharing results: block4/jobs
+  - Intro to Tapis UI:
+    - Intro to Tapis UI: block5/intro
+    - Setting up your GitHub Account: block5/github
+    - Deploying Tapis UI: block5/deploying
 
 theme: jekyll-theme-minimal
