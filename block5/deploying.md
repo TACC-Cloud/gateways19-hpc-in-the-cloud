@@ -1,6 +1,6 @@
 # Deploying Tapis UI
 
-You can deploy your own live copy of Tapis UI. This page will be hosted on GitHub pages and point to the Tapis tenant of your choice. Before beginning, make sure that you have NodeJS installed and a text editor you feel comfortable using.
+You can deploy your own live copy of Tapis UI. This page will be hosted on GitHub pages and point to the Tapis tenant of your choice.
 
 ## Setting up GitHub Pages
 
@@ -30,27 +30,49 @@ First, you will need to configure the `homepage` setting in `package.json`. For 
 
 Second, you must change the Tapis tenant URL. Find the `basePath` setting in the file `src/index.tsx`. For convenience, you can see the original line of code [here](https://github.com/tapis-project/tapis-ui/blob/492aac14e863c585e8d0db66e6b9dde1a8c7cf85/src/index.tsx#L11). Currently, it is pointing to the TACC Tapis tenant. For this training, we will point it to the Training Tapis tenant. Replace `https://tacc.tapis.io` with `https://training.tapis.io`. Save the file.
 
-## Committing and Deploying
+## Setting Up GitPod to use SSH
 
-In a command line shell with NodeJS and `git`, use the following commands:
+Publishing to GitHub pages will require setting up GitPod to use SSH. First find the fork's SSH address. Find the *Code* dropdown button. From here, you will be able to copy the SSH address of your fork. 
+
+<img src="../images/github_clone.png" class="img-responsive" alt="GitHub Clone">
+
+Once you have this address, you will use the bash terminal to set GitPod's remote origin to this address. Use the following commands:
+
+```bash
+git remote set-url origin git@github.com:GITHUB_USERNAME/tapis-ui.git
+```
+
+## Committing Your Changes
+
+You can try committing your changes to GitHub from your GitPod workspace. This will insure that your GitPod workspace can publish to GitHub pages.
 
 ```bash
 eval `ssh-agent`
 ssh-add $HOME/.ssh/tapisui
-npm install
 git add .
 git commit -m "Tapis Training"
+git push origin main
+```
+
+You may receive the following prompt:
+
+```
+The authenticity of host 'github.com (192.30.255.112)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Type `yes` then hit enter. If you are successful, your changes will be pushed to GitHub.
+
+## Deploying
+
+At this point, deploying is just one command:
+
+```bash
 npm run gh-pages
 ```
 
-Briefly, the commands will:
-
-- Add your private key to your shell session
-- Install any required node packages
-- Commit your file changes
-- Build and publish your site
-
-Once it has completed, you will be able to browse to the provided GitHub pages URL. 
+Once it has completed, you will be able to browse to the provided GitHub pages URL.
 
 ## Updating Your Deployment
 
@@ -58,13 +80,16 @@ Occasionally, new releases of Tapis UI will add features and fix bugs. You can u
 
 <img src="../images/deploy_merge.png" class="img-responsive" alt="Repository Merge">
 
-In your local development machine, from within your cloned repository's directory, you may use the following commands:
+In your local development machine or in your GitPod workspace, from within your cloned repository's directory, you may use the following commands:
 
 ```bash
 eval `ssh-agent`
 ssh-add $HOME/.ssh/tapisui
 git pull
+rm package-lock.json
 npm install
+git add .
+git commit -m "Update package-lock.json"
 npm run gh-pages
 ```
 
