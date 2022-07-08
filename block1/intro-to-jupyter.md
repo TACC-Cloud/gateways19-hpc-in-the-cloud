@@ -6,7 +6,18 @@ Jupyter is an open source project that provides a webapp interface for writing c
 
 ### Starting up your Jupyter Notebook Environment
 
-Your jupyter notebook server should be already running at `http://127.0.0.1:8888/?token=` (The one you got in the previous section after running the docker image). You can reach it by going to that location in a browser window.
+If you have not already done so in the previous section, please run the following to start up your jupyter notebook
+server:
+```
+docker run --rm -it -p 8888:8888 tapis/jupyter
+```
+
+It should have started a single container from the `tapis/jupyter` image, which prints out a url to access the jupyter
+notebook from the browser. You can copy paste this url in your browser and access the jupyter notebook.
+
+Your jupyter notebook server should now be running at `http://127.0.0.1:8888/?token=<my_token>`, where <my_token> is
+from the url printed out during server startup.
+You can reach your server by going to that location in a browser window.
 
 Once you open a browser with your Jupyter environment, you should see something similar to this: 
 
