@@ -8,7 +8,7 @@
 ## Schedule (Eastern Time)
 * 8:30 AM - Introduction to Tapis v3
 * 8:50 AM - Intro to Docker, Jupyter and Singularity, Setting up Jupyter Notebooks
-* 9:20 AM - Tapis Systems, Tapis App, Files
+* 9:20 AM - Tapis Systems, Tapis Applications, Files service
 * 9:50 AM - Break
 * 10:00 PM - Launch Tapis Job on a VM and HPC machine, Results and sharing with collaborators
 * 10:40 PM - Serverless Gateway with Tapis UI 
