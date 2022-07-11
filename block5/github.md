@@ -52,7 +52,7 @@ When prompted for a passphrase, hit ENTER and do not specify a passphrase. This 
 You will need to copy the contents of your public key to the clipboard to continue. In the terminal, type:
 
 ```bash
-cat $HOME/.ssh/tapisui
+cat $HOME/.ssh/tapisui.pub
 ```
 
 This should show the contents of your public key, which you can highlight and copy and paste.
